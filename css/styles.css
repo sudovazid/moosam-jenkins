@@ -1,0 +1,208 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+/* Define CSS variables */
+:root {
+    --content-color: #ffffff; /* Default content color */
+}
+
+/* Reset margins and paddings for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: black;
+    color: var(--content-color);
+}
+
+/* Style for the main container */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Search container styling */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Search bar styling */
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--content-color);
+    color: var(--content-color);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/* Placeholder styling for search bar */
+::placeholder {
+    color: var(--content-color);
+}
+
+/* Search button styling */
+.search-button {
+    cursor: pointer;
+    color: var(--content-color);
+    font-size: 24px;
+    background: transparent;
+    border: none;
+}
+
+/* Main header styling */
+.main-header {
+    background-color: var(--content-color);
+    padding-top: 5px;
+    margin-bottom: 40px;
+}
+
+/* City name styling */
+.city {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* Date styling */
+.date {
+    margin-bottom: 10px;
+    font-size: 40px; /* Adjusted for better alignment */
+}
+
+/* Temperature styling */
+.temperature {
+    font-size: 100px; /* Adjusted for better alignment */
+    margin: 10px 0;
+}
+
+/* Description and temperature range styling */
+.description, .temp-range {
+    display: flex;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* Weather details container styling */
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Detail item styling */
+.weather-details .detail-item {
+    text-align: center;
+    flex: 1;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.detail-item div {
+    margin-bottom: 10px;
+}
+
+/* Hourly forecast container styling */
+.hourly-forecast {
+    border-top: 1px solid;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Hourly item styling */
+.hourly-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--content-color);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .city {
+        font-size: 18px;
+    }
+
+    .date {
+        font-size: 30px;
+    }
+
+    .temperature {
+        font-size: 80px;
+    }
+
+    .description, .temp-range {
+        font-size: 25px;
+    }
+
+    .weather-details .detail-item {
+        font-size: 18px;
+    }
+
+    .hourly-forecast {
+        font-size: 18px;
+    }
+}
+
+/* Further responsiveness for very small screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .city {
+        font-size: 16px;
+    }
+
+    .date {
+        font-size: 25px;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .description, .temp-range {
+        font-size: 20px;
+    }
+
+    .weather-details .detail-item {
+        font-size: 16px;
+    }
+
+    .hourly-forecast {
+        font-size: 16px;
+    }
+}
